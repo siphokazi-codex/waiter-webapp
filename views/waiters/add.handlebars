@@ -1,0 +1,34 @@
+<div class="container">
+  <h1 class="text-danger">Waiters Web Application</h1>
+
+  <div class="username">
+    Welcome,  <b>{{username}}</b>
+  </div>
+  <br>
+
+  <h2 class="text-info">Please select your shift days</h2>
+
+  <form action="/waiters/{{username}}" method="post">
+     <label  class="mon"><input type="checkbox" name="days" value="Monday" {{#if waiter.Monday}}checked{{/if}}>Monday</label>
+     <label class="tue"><input type="checkbox" name="days" value="Tuesday" {{#if shift.Tuesday}}checked{{/if}}>Tuesday</label>
+     <label class="wed"><input type="checkbox" name="days" value="Wednesday" {{#if shift.Wednesday}}checked{{/if}}>Wednesday</label>
+     <label class="thu"><input type="checkbox" name="days" value="Thursday" {{#if shift.Thursday}}checked{{/if}}>Thursday</label>
+     <label class="fri"><input type="checkbox" name="days" value="Friday" {{#if shift.Friday}}checked{{/if}}>Friday</label>
+     <label class="sat"><input type="checkbox" name="days" value="Saturday" {{#if shift.Saturday}}checked{{/if}}>Saturday</label>
+     <label class="sun"><input type="checkbox" name="days" value="Sunday" {{#if shift.Sunday}}checked{{/if}}>Sunday</label><br><br>
+     <input class="btn btn-success" type="submit" name="" value="Add Days"><br><br>
+
+    <div class="addWaiter">
+      {{messages.addWaiter}}
+    </div>
+
+    {{#if messages.error}}
+      <div class="error">
+        {{messages.error}}
+        <br>
+      </div>
+    {{/if}}
+
+  </form>
+
+</div>

@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="embed-responsive embed-responsive-4by3">
+
+    <h1 class="text-danger">Waiters Web Application</h1>
+    <input class="btn btn-success" margin-bottom="10px" type="submit" value="Enough waiters waiters for the day"><br>
+    <input class="btn btn-danger" type="submit" value="Still need more waiters for the day"><br>
+    <input class="btn btn-warning" type="submit" value="Over subscribed waiters for the day"><br><br><br>
+    <h2 class="rooster">Waiters Rooster for the week</h2>
+
+    <form action="/waiters/admin" method="post">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+            <th>SATURDAY</th>
+            <th>SUNDAY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ul>
+            <td class="{{monday}}">
+              {{#each data.Monday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+            <td class="{{tuesday}}">
+              {{#each data.Tuesday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+            <td class="{{wednesday}}">
+              {{#each data.Wednesday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+
+            <td class="{{thursday}}">
+              {{#each data.Thursday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+            <td class="{{friday}}">
+              {{#each data.Friday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+            <td class="{{saturday}}">
+              {{#each data.Saturday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+            <td class="{{sunday}}">
+              {{#each data.Sunday.waiters}}
+                <li>{{this}}</li>
+              {{/each}}
+            </td>
+          </ul>
+        </tbody>
+      </table>
+    </form>
+
+
+    <form action="/reset" method="post">
+      <input class="btn btn-success" type="submit" value="Reset Rooster"><br><br>
+    </form>
+  </div>
+</div>

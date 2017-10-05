@@ -1,0 +1,67 @@
+body {
+background-color: #474c54;
+}
+
+.container {
+  background-color: #fff;
+  width: 75%;
+  margin: auto;
+}
+
+h1 {
+  color: #2b020a;
+  font-size: 50px;
+  margin-left: 180px;
+}
+
+h5 {
+  color: #4c5360;
+  font-size: 20px;
+  margin-left: 1px;
+  margin-top: -10px;
+  font-weight: lighter;
+}
+
+.error , .addWaiter {
+  color: #8e3937;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.username {
+  color: #474c54;
+  margin-left: 1px;
+  font-size: 30px;
+}
+
+.mon, .wed, .fri, .sun {
+  background-color: #aa5861;
+  padding: 9px;
+  font-size: 17px;
+  margin-left: -4px;
+}
+
+.tue, .thu, .sat {
+  background-color: #e5d7d9;
+  padding: 9px;
+  font-size: 17px;
+  margin-left: -4px;
+}
+
+li {
+  list-style: none;
+}
+
+.colorOne{
+  background-color: #f28a30;
+}
+.colorTwo {
+  background-color: #cc4233;
+}
+.colorThree {
+  background-color: #64c65f;
+}
+
+.rooster {
+  margin-bottom: 3px;
+}
