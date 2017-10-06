@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container text-center" >
   <h1 class="text-danger">Waiters Web Application</h1>
 
   <div class="username">
@@ -6,7 +6,7 @@
   </div>
   <br>
 
-  <h2 class="text-info">Please select your shift days</h2>
+  <h2 class="rooster">Please select your shift days</h2>
 
   <form action="/waiters/{{username}}" method="post">
      <label  class="mon"><input type="checkbox" name="days" value="Monday" {{#if waiter.Monday}}checked{{/if}}>Monday</label>

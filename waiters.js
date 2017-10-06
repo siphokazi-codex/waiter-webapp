@@ -69,7 +69,7 @@ module.exports = function(models) {
       waiter.forEach(function(waiterSchedule) {
         waiterSchedule.days.forEach(function(day){
           shifts[day].waiters.push(waiterSchedule.username);
-          console.log(waiterSchedule.username);
+            //console.log(waiterSchedule.username);
         })
       })
 
