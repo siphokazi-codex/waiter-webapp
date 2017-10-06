@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
  app.get('/', function(req, res){
-  res.redirect('/waiters/add);
+  res.redirect('/waiters/add');
  });
 //
  app.get('/waiters/admin', waitersBoard.getWaiter);

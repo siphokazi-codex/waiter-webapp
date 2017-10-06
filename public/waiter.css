@@ -50,3 +50,26 @@ li {
   margin-left: 1px;
   font-size: 20px;
 }
+
+.success {
+  padding: 10px;
+  background-color: #64c65f;
+  color: white;
+  width: 35%;
+}
+
+.alertWaiter {
+  padding: 10px;
+  background-color: #cc4233;
+  color: white;
+  margin-top: 10px;
+  width: 35%;
+}
+
+.warning {
+  padding: 10px;
+  background-color: #f28a30;
+  color: white;
+  margin-top: 10px;
+  width: 35%;
+}
