@@ -31,9 +31,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // create application/json parser
 app.use(bodyParser.json())
 
-// app.get('/', function(req, res){
-//  res.redirect('/waiters')
-// });
+ app.get('/', function(req, res){
+  res.redirect('/waiters/add);
+ });
 //
  app.get('/waiters/admin', waitersBoard.getWaiter);
  app.get('/waiters/:username', waitersBoard.getForm);
