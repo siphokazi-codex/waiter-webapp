@@ -35,7 +35,7 @@ app.use(bodyParser.json())
  //  res.redirect('/waiters/' + username);
  // });
 //
- app.get('/waiters/login', waitersBoard);
+ //app.get('/waiters/login', waitersBoard);
  app.get('/waiters/admin', waitersBoard.getWaiter);
  app.get('/waiters/:username', waitersBoard.getForm);
 
