@@ -23,9 +23,9 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 //Including your public folder, to have access of the contents in there.
-app.use(express.static('public'))
+  app.use(express.static('public'))
 
-// parse application/x-www-form-urlencoded parser
+  // parse application/x-www-form-urlencoded parser
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // create application/json parser
@@ -35,6 +35,7 @@ app.use(bodyParser.json())
  //  res.redirect('/waiters/' + username);
  // });
 //
+ app.get('/waiters/login', waitersBoard);
  app.get('/waiters/admin', waitersBoard.getWaiter);
  app.get('/waiters/:username', waitersBoard.getForm);
 
@@ -42,6 +43,8 @@ app.use(bodyParser.json())
 
  app.post('/reset', waitersBoard.resetFields);
 
+//Addling middleware for loginS
+//app.use(flash());
 //start the server
 var server = app.listen(process.env.PORT || 3000, function () {
 

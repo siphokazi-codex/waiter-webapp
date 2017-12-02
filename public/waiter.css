@@ -19,14 +19,14 @@
 .mon, .wed, .fri, .sun {
   background-color: #aa5861;
   padding: 9px 22px 9px 22px;
-  font-size: 19px;
+  font-size: 16px;
   margin-left: -4px;
 }
 
 .tue, .thu, .sat {
   background-color: #e5d7d9;
   padding: 9px 22px 9px 22px;
-  font-size: 19px;
+  font-size: 16px;
   margin-left: -4px;
 }
 

@@ -15,8 +15,8 @@ module.exports = function(models) {
     models.Waiters.find({}, function(err, checkWaiters) {
       if (err) {
         return next(err);
-      }0.
-      0
+      }
+
       res.render('waiters/add', {
         username
       });
@@ -134,6 +134,47 @@ module.exports = function(models) {
       }
     });
   }
+
+  var users = {
+    "admin" : "admin",
+    "Andre" : "waiter"
+  };
+
+  var userRole = users[req.session.username];
+
+  const logout = function(req, res, next){
+
+    delete req.session.username;
+    req.session.destroy;
+    res.redirect("/login");
+  }
+
+  const access_denied = function(req, res){
+    res.render("access denied");
+  }
+
+  const login = function(req, res, next){
+
+      let username = req.body.username;
+
+      (if !userRole req.session.username && req.body.password ===){
+        req.session.username = req.body.username;
+        res.redirect("waiters/" + username);
+      }
+      else {
+        res.redirect("/login");
+      }
+
+      //Suppose to be on index.js file
+      // if (req.session.username == null){
+      //
+      // }
+      // if (req.path !== "/login"){
+      //   return res.redirect("/login")
+      // }
+      // next();
+  }
+
 // generating counter of each person greeted
 
   return {

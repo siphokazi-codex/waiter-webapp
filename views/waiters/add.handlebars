@@ -9,13 +9,13 @@
   <h2 class="rooster">Please select your shift days</h2>
 
   <form action="/waiters/{{username}}" method="post">
-     <label  class="mon"><input type="checkbox" name="days" value="Monday" {{#if waiter.Monday}}checked{{/if}}>Monday</label>
-     <label class="tue"><input type="checkbox" name="days" value="Tuesday" {{#if shift.Tuesday}}checked{{/if}}>Tuesday</label>
-     <label class="wed"><input type="checkbox" name="days" value="Wednesday" {{#if shift.Wednesday}}checked{{/if}}>Wednesday</label>
-     <label class="thu"><input type="checkbox" name="days" value="Thursday" {{#if shift.Thursday}}checked{{/if}}>Thursday</label>
-     <label class="fri"><input type="checkbox" name="days" value="Friday" {{#if shift.Friday}}checked{{/if}}>Friday</label>
-     <label class="sat"><input type="checkbox" name="days" value="Saturday" {{#if shift.Saturday}}checked{{/if}}>Saturday</label>
-     <label class="sun"><input type="checkbox" name="days" value="Sunday" {{#if shift.Sunday}}checked{{/if}}>Sunday</label><br><br>
+     <label class="mon"><input type="checkbox" name="weekDays" value="monday" {{#if days.monday}} checked {{/if}}>Monday</label>
+     <label class="tue"><input type="checkbox" name="weekDays" value="tuesday" {{#if days.tuesday}} checked {{/if}}>Tuesday</label>
+     <label class="wed"><input type="checkbox" name="weekDays" value="wednesday" {{#if days.wednesday}} checked {{/if}}>Wednesday</label>
+     <label class="thu"><input type="checkbox" name="weekDays" value="thursday" {{#if days.thursday}} checked {{/if}}>Thursday</label>
+     <label class="fri"><input type="checkbox" name="weekDays" value="friday" {{#if days.friday}} checked {{/if}}>Friday</label>
+     <label class="sat"><input type="checkbox" name="weekDays" value="saturday" {{#if days.saturday}} checked {{/if}}>Saturday</label>
+     <label class="sun"><input type="checkbox" name="weekDays" value="sunday" {{#if days.sunday}} checked {{/if}}>Sunday</label><br><br>
      <input class="btn btn-success" type="submit" name="" value="Add Days"><br><br>
 
     <div class="addWaiter">
