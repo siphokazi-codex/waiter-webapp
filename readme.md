@@ -1,7 +1,7 @@
 # Waiters Availability WebApp.
 
 ## About the Application
-The application allows the waiter to enter their name on the as a url parameter
+The application allows the waiter to enter their name on the as a url parameter than returns the days of the week.  Waiter has the opportunity to select the days they wish to work.  On the other side the admin can enter admin parameter on the url, than the app will return the waiters names and the days they have selected to work.  The admin can also reset the rooster to capture details for a new week.
 
 ## Platforms the application can run on
   - Linux (Ubuntu)
@@ -18,8 +18,8 @@ The application allows the waiter to enter their name on the as a url parameter
 
 ## Usage
 ### Output Example
-  ![Landing Page](registration.png)
-  ![Landing Page](registration.png)
+  ![Landing Page](waiters.png)
+  ![Landing Page](admin.png)
 
 ### How to configure the app and run it on your machine
   - Open the project on your IDE, which is atom
