@@ -21,7 +21,7 @@ The application allows the waiter to enter their name on the as a url parameter 
   - type npm install (to create node modules for the package.json file in the application).
 
 ## Tests
-  - Tests for the application [![Build Status](https://travis-ci.org/siphokazi-codex/registration-routes-filter.svg?branch=master)](https://travis-ci.org/siphokazi-codex/registration-routes-filter)
+  - Tests for the application [![Build Status](https://travis-ci.org/siphokazi-codex/waiter-webapp.svg?branch=master)](https://travis-ci.org/siphokazi-codex/waiter-webapp)
 
 ## Usage
 ### Output Example
