@@ -13,6 +13,13 @@ The application allows the waiter to enter their name on the as a url parameter 
   https://github.com/siphokazi-codex/waiter-webapp
   Or [you can click the direct link](https://github.com/siphokazi-codex/waiter-webapp).
 
+## Installations
+### Different System Software needed for application
+  - Install Atom Integrated Development Environment(IDE) on the terminal(type sudo apt-get install atom).
+### Different Dependencies and devDependencies needed for application
+  - On your terminal, go to the folder containing the application.
+  - type npm install (to create node modules for the package.json file in the application).
+
 ## Tests
   - Tests for the application [![Build Status](https://travis-ci.org/siphokazi-codex/registration-routes-filter.svg?branch=master)](https://travis-ci.org/siphokazi-codex/registration-routes-filter)
 
